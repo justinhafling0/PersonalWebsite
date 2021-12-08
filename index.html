@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Justin Hafling</title>
+    <script type = "text/javascript" src="UpdateCrypto.js"></script>
+  </head>
+
+
+  <body onload = initializeCryptos()>
+    <div class="main-container">
+      <div class="main-header">
+        <h1> <small style="color:#008080; margin-right:2.5%;">&lt;portfolio&gt;</small> Justin Hafling <small style="color:#008080;margin-left:2.5%;">&lt;&sol;portfolio&gt;</small></h1>
+      </div>
+      <div class="main-image">
+        <img src="images/Clipart.png" style="width:36%;height:auto;opacity:0.9" class="center">
+      </div>
+    </div>
+
+    <div class="thick-line"> </div>
+
+
+    <!-- About Me Section -->
+    <div class="aboutme_container">
+      <div class="header">
+        <h1> <small style="color:#008080; margin-right:2.5%;">&lt;section&gt;</small>About Me<small style="color:#008080;margin-left:2.5%;">&lt;&sol;section&gt;</small></h1>
+      </div>
+      <div class="aboutme_content">
+
+        <span class="Q">> Justin@website</span><span class="A">: Justin.origin</span>
+        <br><span class="A">Long Island, NY</span>
+        <br><br><br>
+
+        <span class="Q">> Justin@website</span><span class="A">: Justin.education</span>
+        <br><span class="A">B.S. Computer Engineering - Boston University</span>
+        <br><span class="A">B.S. Mechanical Engineering - Boston University</span>
+        <br><br><br>
+
+        <span class="Q">> Justin@website</span><span class="A">: Justin.interests</span>
+        <br><span class="A">["Working Out", "DIY Projects", "Learning"]</span>
+        <br><br><br>
+
+
+        <span class="Q">> Justin@website</span><span class="A">: Justin.languages</span>
+        <br><span class="A">["C", "C++", "Python", "Matlab", "JavaScript"]</span>
+        <br><br><br>
+
+        <span class="Q">> Justin@website</span><span class="A">: Justin.current</span>
+        <br><span class="A">Software Engineer @ BAE Systems</span>
+        <br><br><br>
+
+        <span class="Q">> Justin@website</span><span class="A">: Justin.resume</span>
+        <br><span class="A"><a href="resources/resume.pdf" target="_blank">Click Me</a></span>
+        <br><br><br>
+
+        <span class="Q">> Justin@website</span><span class="A">: Justin.contact</span>
+        <br><span class="A">justinhafling0@gmail.com </span>
+        <br><br><br>
+
+        <span class="Q">> Justin@website</span><span class="A">:</span>
+      </div>
+
+    </div>
+
+    <div class="thick-line"> </div>
+
+    <!-- Projects / Experience -->
+
+    <div class="projects_container">
+      <div class="header">
+        <h1> <small style="color:#008080; margin-right:2.5%;">&lt;section&gt;</small>Projects/Experience<small style="color:#008080;margin-left:2.5%;">&lt;&sol;section&gt;</small></h1>
+      </div>
+
+      <!-- Project Row 1-->
+      <div class="projects_content">
+        <div class="projects_project">
+          <div class="projects_title" id="Parallel-Programming">
+            Heat Analysis MPI vs OpenACC
+          </div>
+          <div class="projects_image">
+            IMAGE
+          </div>
+          <div class="projects_button">
+
+          </div>
+        </div>
+
+        <div class="projects_project" id=Shell>
+          <div class="projects_title">
+            Linux Shell Project
+          </div>
+          <div class="projects_image">
+            IMAGE
+          </div>
+          <div class="projects_button">
+
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- Project Row 2-->
+      <div class="projects_content">
+        <div class="projects_project">
+          <div class="projects_title" id="Parallel-Programming">
+            Heat Analysis MPI vs OpenACC
+          </div>
+          <div class="projects_image">
+            IMAGE
+          </div>
+          <div class="projects_button">
+
+          </div>
+        </div>
+
+        <div class="projects_project" id=Shell>
+          <div class="projects_title">
+            Linux Shell Project
+          </div>
+          <div class="projects_image">
+            IMAGE
+          </div>
+          <div class="projects_button">
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="thick-line"> </div>
+
+    <div class="stocks_container">
+      <div class="header">
+        <h1> <small style="color:#008080; margin-right:2.5%;">&lt;section&gt;</small>Portfolio<small style="color:#008080;margin-left:2.5%;">&lt;&sol;section&gt;</small></h1>
+      </div>
+
+      <div class="stocks_header">
+        <ul>
+          <li> CryptoCurrency </li>
+          <li> Position </li>
+          <li> Price </li>
+          <li> Net </li>
+
+        </ul>
+
+      </div>
+      <div class="stock_line">
+        <ul id='nav_1'>
+          <li> Thing 1</li>
+          <li> Thing 2</li>
+          <li> Thing 3</li>
+          <li> Thing 4</li>
+
+        </ul>
+      </div>
+
+      <div class="stock_line">
+        <ul>
+          <li> Thing 1</li>
+          <li> Thing 2</li>
+          <li> Thing 3</li>
+          <li> Thing 4</li>
+
+        </ul>
+      </div>
+
+    </div>
+
+    <script type="text/javascript">
+
+
+
+        var apiKey = 'xStZdeIWOFAgFIkRZxz6k0w34zqSym_u';
+        var baseUrl = 'https://api.polygon.io/v2/last/nbbo/';
+        var request = baseUrl + 'AAPL' + '?apiKey=' + apiKey;
+
+        var data;
+
+        fetch("https://data.messari.io/api/v1/assets/btc/metrics")
+        .then(response => {
+            response.json().then(parsedJson => {
+                console.log(parsedJson.data.symbol);
+                console.log(parsedJson.data);
+                console.log(parsedJson.data.market_data.price_usd);
+            })
+        })
+
+        console.log(data);
+
+
+
+    </script>
+
+
+
+
+<!--
+<div class="About-Me">
+<div class="header">
+  <h1> <small style="color:#008080; margin-right:2.5%;">&lt;section&gt;</small>About Me<small style="color:#008080;margin-left:2.5%;">&lt;&sol;section&gt;</small></h1>
+</div
+  <div class="thick-line"> THICK LINE</div>
+
+  <div class="header">
+    <h1> <small style="color:#008080; margin-right:2.5%;">&lt;section&gt;</small>About Me<small style="color:#008080;margin-left:2.5%;">&lt;&sol;section&gt;</small></h1>
+  </div
+
+</div>
+<br>
+
+<div class="thick-line"> THICK LINE</div>
+ -->
+
+
+
+
+
+
+    <div class="container" id="side_bar">
+      <ul>
+        <li id="Github">
+          <div class="mini_image" id="github_image"> </div>
+        </li>
+        <li id="LinkedIn">
+          <div class="mini_image" id="linkedin_image"> </div>
+        </li>
+        <li id="Mail">
+          <div class="mini_image" id="mail_image"> </div>
+        </li>
+      </ul>
+    </div>
+
+
+
+  </body>
+
+</html>

@@ -1,0 +1,178 @@
+body, html{
+  height: 100%;
+}
+
+:root{
+  --spacing_sides: 10%;
+  --box_width: 20%;
+}
+
+*{
+  padding: 0px;
+  margin: 0px;
+  font-family: courier;
+}
+
+ul{
+  top: 20%;
+  position: absolute;
+}
+
+li{
+  margin-top: 0px;
+  width: 70px;
+  height: 40px;
+  position: relative;
+  background-color: red;
+  color: white;
+}
+
+li:hover{
+  margin: 0px;
+  width: 90px;
+  height: 50px;
+  font-size: 35px;
+  border-radius: 5px;
+}
+
+.center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.center_vert{
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+
+}
+
+.clearfix:after {
+   content: " ";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+
+.my-name{
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  -ms-transform: translate(-50%, 0);
+  transform: translate(-50%);
+}
+.my-name h1{
+  padding-top:20px;
+  color: white;
+  text-align: center;
+  font-size: 100px;
+  font-family: courier;
+  font-weight: 400px;
+}
+
+
+.li_text{
+  font-size: 20px;
+  font-weight: 1000;
+  line-height: 100%;
+}
+
+.container{
+  height: 100%;
+}
+
+.image_background{
+  background-image: url("images/code_background.jpg");
+  height: 100%;
+  opacity: 0.5;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#Github{
+  border-top-right-radius: 5px;
+  background-color: #c2c2c2;
+}
+
+#LinkedIn{
+  background-color: #e0e0e0;
+}
+
+#Mail{
+  border-bottom-right-radius: 5px;
+  background-color: #c2c2c2;
+}
+
+
+.mini_image{
+    background-image: url("images/github_logo.png");
+    height: 100%;
+    width: 60%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#mail_image{
+  background-image: url("images/mail_logo.png");
+  margin-left: 14%;
+  width: 57%;
+}
+
+#linkedin_image{
+  background-image: url("images/linked_in.png");
+  margin-left: 13%;
+}
+
+#github_image{
+  background-image: url("images/github_logo.png");
+  margin-left: 15%;
+}
+
+.box{
+  width: var(--box_width);
+  height: 10%;
+  position: absolute;
+  top: 80%;
+  background-color: #c2c2c2;
+  border-radius: 10px;
+}
+
+.box2{
+  width: var(--box_width);
+  height: 28%;
+  position: absolute;
+  top: 50%;
+  background-color: #c2c2c2;
+  border-radius: 10px;
+}
+
+
+
+.position_1{
+  left: var(--spacing_sides);
+}
+
+.position_2{
+  left: calc(2 * var(--spacing_sides) + var(--box_width));
+}
+
+.position_3{
+  left: calc(3 *  var(--spacing_sides) + 2 *  var(--box_width));
+}
+
+
+.footer{
+  position: fixed;
+  background-color: #e5e5e5;
+  height:0%;
+  width: 100%;
+  bottom: 1%;
+  color: white;
+}
